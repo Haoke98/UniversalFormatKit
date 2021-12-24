@@ -3,6 +3,12 @@ from PIL import Image
 
 
 def ToICO(image_path: str, side_length: int):
+    """
+    图片格式转换Any->ICO
+    :param image_path:
+    :param side_length:没有意义，怎样设置，最终出来的还是256x256
+    :return:
+    """
     img = Image.open(image_path).resize((side_length, side_length))
     tmp = os.path.splitext(image_path)
     root = os.path.dirname(image_path)
@@ -12,4 +18,4 @@ def ToICO(image_path: str, side_length: int):
 
 
 if __name__ == '__main__':
-    ToICO("/Users/shadikesadamu/Documents/iniedu/LOGO/20211219213312 拷贝.png", 256)
+    ToICO("/Users/shadikesadamu/Documents/iniedu/logo.png", 400)

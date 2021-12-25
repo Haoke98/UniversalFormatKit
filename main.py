@@ -2,20 +2,45 @@ import os
 from PIL import Image
 
 
-def ToICO(image_path: str, side_length: int):
+def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = None):
     """
     图片格式转换Any->ICO
-    :param image_path:
+    :param sourceFilePath:
     :param side_length:没有意义，怎样设置，最终出来的还是256x256
     :return:
     """
-    img = Image.open(image_path).resize((side_length, side_length))
-    tmp = os.path.splitext(image_path)
-    root = os.path.dirname(image_path)
-    new_path = os.path.join(root, tmp[0]+'.ico')
-    img.save(new_path)
-    print(f"File {new_path} has been saved.")
+    img = Image.open(sourceFilePath)
+    if side_length is not None:
+        img = img.resize((side_length, side_length))
+    tmp = os.path.splitext(sourceFilePath)
+    root = os.path.dirname(sourceFilePath)
+    img.save(targetFilePath)
+    print(f"File {targetFilePath} has been saved.")
 
 
 if __name__ == '__main__':
-    ToICO("/Users/shadikesadamu/Documents/iniedu/logo.png", 400)
+    from tkinter import filedialog
+    import os
+
+    options = {'initialdir': os.getcwd(), 'title': '万能格式转换器Universal Format Kit', 'filetypes': [
+        ('图片文件', 'png'),
+        ('图片文件', 'jpg'),
+        ('图片文件', 'jpeg'),
+        ('所有文件', '.*')
+    ], 'message': '请选择将进行格式转换的图片：', 'defaultextension': 'png', 'multiple': False, 'typevariable': True}
+    # 请求选择文件夹/目录
+    # 设置文件对话框会显示的文件类型
+
+    sourceFile = filedialog.askopenfilename(**options)
+    print(sourceFile)
+
+    saveOpts = {'initialdir': os.getcwd(), 'title': '万能格式转换器Universal Format Kit', 'filetypes': [
+        ('ICO', 'ico'),
+        ('PNG', 'png'),
+        ('JPEG', 'jpeg'),
+    ], 'message': '请选择输出位置和格式：', 'defaultextension': 'ICO'}
+    # 设置文件对话框会显示的文件类型
+    print("芝麻开门")
+    targetFile = filedialog.asksaveasfilename(**saveOpts)
+    print(targetFile)
+    ImgFormat(sourceFile, targetFile)

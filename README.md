@@ -6,9 +6,28 @@
 </div>
 This is a cross platform image format conversion tool using excellent tool libraries such as pilot and TK.
 
+## Supported platforms
+
+1. Windows
+2. Mac
+3. Unix
+
+## Supported picture formats
+
+1. .png -> .ico
+2. .jpg -> .ico
+3. .jpeg -> .ico
+4. .png -> .jpg
+5. .png -> .jpeg
+6. .jpg -> .png
+7. .jpg -> .jpeg
+8. .jpeg -> .png
+9. .jpeg -> .jpg
+
+
+
 ## Update log：
-### v1.0.1 
-It realizes the visual selection of input and output file paths and formats.
+#### v1.0.1 It realizes the visual selection of input and output file paths and formats.
 
 
 ## Thank the giant

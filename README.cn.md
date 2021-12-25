@@ -7,6 +7,25 @@
 
 这是一个利用Pillow和Tk等优良的工具库实现的跨平台图片格式的转换工具。
 
+## 支持的平台
+
+1. Windows
+2. Mac
+3. Unix
+
+## 支持的图片格式
+
+1. .png -> .ico
+2. .jpg -> .ico
+3. .jpeg -> .ico
+4. .png -> .jpg
+5. .png -> .jpeg
+6. .jpg -> .png
+7. .jpg -> .jpeg
+8. .jpeg -> .png
+9. .jpeg -> .jpg
+
+
 ## 更新日志：
 ### v1.0.1 实现了可视化选择输入和输出文件路径及格式。
 

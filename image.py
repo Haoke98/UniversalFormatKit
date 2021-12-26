@@ -29,10 +29,9 @@ def ImageFormatUtils(title: str = '万能图片格式转换器'):
     ], 'message': '请选择将进行格式转换的图片：', 'defaultextension': 'png', 'multiple': False, 'typevariable': True}
     # 请求选择文件夹/目录
     # 设置文件对话框会显示的文件类型
-
     source_file = filedialog.askopenfilename(**options)
     print(source_file)
-    if type(source_file) is not str:
+    if os.path.isfile(source_file):
         save_opts = {'initialdir': os.getcwd(), 'title': title, 'filetypes': [
             ('ICO', 'ico'),
             ('PNG', 'png'),
@@ -42,5 +41,5 @@ def ImageFormatUtils(title: str = '万能图片格式转换器'):
         print("芝麻开门")
         target_file = filedialog.asksaveasfilename(**save_opts)
         print(target_file)
-        if type(target_file) is not str:
+        if type(target_file) is str:
             ImgFormat(source_file, target_file)

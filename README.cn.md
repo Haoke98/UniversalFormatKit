@@ -1,11 +1,11 @@
-# 万能的多平台图片格式转换器
+# 万能的多平台格式转换器
 <div align="center">
 
 简体中文 |  [English](./README.md)
 
 </div>
 
-这是一个利用Pillow和Tk等优良的工具库实现的跨平台图片格式的转换工具。
+这是一个利用Pillow和Tk等优良的工具库实现的跨平台格式的转换工具。
 
 ## 支持的平台
 
@@ -25,10 +25,18 @@
 8. .jpeg -> .png
 9. .jpeg -> .jpg
 
+## 界面展示
+### 程序主界面
+![Star](./static/images/GUI.jpg)
+### 图片格式转换工具
+#### 选择源图片:
+![Star](./static/images/ImageFormatTool-selectFile.jpg)
+#### 选择输出路径以及输出格式:
+![Star](./static/images/ImageFormatTool-selectSaveLocationAndTargetExtenction.jpg)
 
 ## 更新日志：
-### v1.0.1 实现了可视化选择输入和输出文件路径及格式。
-
+#### v1.0.1 实现了可视化选择输入和输出文件路径及格式。
+#### v1.0.2 为UniversalFormatter实现了一个可视化主页（root）。
 
 ## 感谢巨人
 

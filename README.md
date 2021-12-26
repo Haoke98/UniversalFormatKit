@@ -1,10 +1,10 @@
-# Universal multi platform picture format converter
+# Universal multi platform formatter.
 <div align="center">
 
 [简体中文](./README.cn.md) |  English
 
 </div>
-This is a cross platform image format conversion tool using excellent tool libraries such as pilot and TK.
+This is a cross platform format conversion tool using excellent tool libraries such as pilot and TK.
 
 ## Supported platforms
 
@@ -24,10 +24,18 @@ This is a cross platform image format conversion tool using excellent tool libra
 8. .jpeg -> .png
 9. .jpeg -> .jpg
 
-
+## Interface Display
+### Home （root）
+![Star](./static/images/GUI.jpg)
+### ImageFormatTool
+#### Choose Source Image:
+![Star](./static/images/ImageFormatTool-selectFile.jpg)
+#### Choose Save Location and Target Extension:
+![Star](./static/images/ImageFormatTool-selectSaveLocationAndTargetExtenction.jpg)
 
 ## Update log：
 #### v1.0.1 It realizes the visual selection of input and output file paths and formats.
+#### v1.0.2 Implemented a visual Home (root) page for the UniversalFormatter.
 
 
 ## Thank the giant

@@ -36,6 +36,7 @@ This is a cross platform format conversion tool using excellent tool libraries s
 ## Update log：
 #### v1.0.1 It realizes the visual selection of input and output file paths and formats.
 #### v1.0.2 Implemented a visual Home (root) page for the UniversalFormatter.
+#### v1.0.3 Fixed a bug in the image format conversion tool that allows you to select the output path and format instead of exiting directly when no input file is selected.
 
 
 ## Thank the giant

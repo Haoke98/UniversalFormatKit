@@ -32,15 +32,15 @@ def ImageFormatUtils(title: str = '万能图片格式转换器'):
 
     source_file = filedialog.askopenfilename(**options)
     print(source_file)
-
-    save_opts = {'initialdir': os.getcwd(), 'title': title, 'filetypes': [
-        ('ICO', 'ico'),
-        ('PNG', 'png'),
-        ('JPEG', 'jpeg'),
-    ], 'message': '请选择输出位置和格式：', 'defaultextension': 'ICO'}
-    # 设置文件对话框会显示的文件类型
-    print("芝麻开门")
-    target_file = filedialog.asksaveasfilename(**save_opts)
-    print(target_file)
-    if type(source_file) is not str and type(target_file) is not str:
-        ImgFormat(source_file, target_file)
+    if type(source_file) is not str:
+        save_opts = {'initialdir': os.getcwd(), 'title': title, 'filetypes': [
+            ('ICO', 'ico'),
+            ('PNG', 'png'),
+            ('JPEG', 'jpeg'),
+        ], 'message': '请选择输出位置和格式：', 'defaultextension': 'ICO'}
+        # 设置文件对话框会显示的文件类型
+        print("芝麻开门")
+        target_file = filedialog.asksaveasfilename(**save_opts)
+        print(target_file)
+        if type(target_file) is not str:
+            ImgFormat(source_file, target_file)

@@ -1,9 +1,11 @@
 import os
+import tkinter.messagebox
+
 from PIL import Image
 from tkinter import filedialog
 
 
-def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = None):
+def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = None) -> bool:
     """
     图片格式转换Any->ICO
     :param targetFilePath:
@@ -18,6 +20,7 @@ def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = None)
     root = os.path.dirname(sourceFilePath)
     img.save(targetFilePath)
     print(f"File {targetFilePath} has been saved.")
+    return True
 
 
 def ImageFormatUtils(title: str = '万能图片格式转换器'):
@@ -42,4 +45,7 @@ def ImageFormatUtils(title: str = '万能图片格式转换器'):
         target_file = filedialog.asksaveasfilename(**save_opts)
         print(target_file)
         if type(target_file) is str:
-            ImgFormat(source_file, target_file)
+            if ImgFormat(source_file, target_file):
+                if os.path.isfile(target_file):
+                    tkinter.messagebox.showinfo(title=title, message="格式转换成功!")
+

@@ -40,6 +40,8 @@ This is a cross platform format conversion tool using excellent tool libraries s
 #### v1.0.4 Fixed bug in image path verification code.
 #### v1.0.5 Added the function of success prompt message box.
 
+## Development Plan
+* [ ] Convert video to GIF animation
 
 ## Thank the giant
 

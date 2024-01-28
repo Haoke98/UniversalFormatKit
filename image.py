@@ -5,7 +5,7 @@ from PIL import Image
 from tkinter import filedialog
 
 
-def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = None) -> bool:
+def ImgFormat(sourceFilePath: str, targetFilePath: str, side_length: int = 256) -> bool:
     """
     图片格式转换Any->ICO
     :param targetFilePath:

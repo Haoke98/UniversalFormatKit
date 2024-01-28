@@ -41,6 +41,9 @@
 #### v1.0.4 修复了图片路径检验代码存在的Bug。
 #### v1.0.5 新增了成功提示消息框功能。
 
+## 开发计划
+* [ ] 实现视频转GIF动图
+
 ## 感谢巨人
 
 <a title="PIL（Pillow）" href="https://github.com/python-pillow/Pillow" target="_blank">

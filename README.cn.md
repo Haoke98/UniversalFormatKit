@@ -42,7 +42,7 @@
 #### v1.0.5 新增了成功提示消息框功能。
 
 ## 开发计划
-* [ ] 实现视频转GIF动图
+* [ ] 实现视频转GIF动图,可以参考[ozheng1993/video2gif](https://github.com/ozheng1993/video2gif).
 
 ## 感谢巨人
 

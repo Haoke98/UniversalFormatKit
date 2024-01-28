@@ -41,7 +41,7 @@ This is a cross platform format conversion tool using excellent tool libraries s
 #### v1.0.5 Added the function of success prompt message box.
 
 ## Development Plan
-* [ ] Convert video to GIF animation
+* [ ] Convert video to GIF animation, You can refer to [ozheng1993/video2gif](https://github.com/ozheng1993/video2gif).
 
 ## Thank the giant
 
